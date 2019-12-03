@@ -1,5 +1,5 @@
 {
-  "name": "tamu-datathon/statsboard",
+  "name": "statsboard",
   "scripts": {
     "dev": "next",
     "build": "next build",
