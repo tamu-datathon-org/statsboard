@@ -1,0 +1,13 @@
+version: "0.1"
+services:
+  statsboard-nextjs:
+    image: node:slim
+    user: root
+    volumes: 
+      - ./:/var/www/statsboard
+    working_dir: /var/www/statsboard
+    expose:
+      - 6666
+    ports:
+      - 80:6666
+    command: bash -c "npm i && npm run build && npm start -- -p 6666"
